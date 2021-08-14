@@ -18,13 +18,19 @@ function calculateProfitAndLoss(initial,quantity,current){
     if (initial > current) {
       var loss = (initial - current) * quantity
       var lossPercentage = (loss/initial) * 100
-      showOutput('yes')
+      showOutput('Loss is ' + loss + ' and the loss percentage is ' + lossPercentage + '%')
+      outputBox.style.color = "red"
+      outputBox.style.fontSize = "xx-large"
     }else if (current > initial){
-        var loss = (initial - current) * quantity
-      var lossPercentage = (loss/initial) * 100
-     showOutput('no')
+        var profit = (current - initial) * quantity
+      var profitPercentage = (profit/initial) * 100
+     showOutput('The profit is ' + profit + ' and profit percentage is ' + profitPercentage + '%')
+     outputBox.style.color = "green"
+     outputBox.style.fontSize = "xx-large"
     }else {
-     showOutput('yes and no')
+     showOutput('No pain No gain')
+     outputBox.style.color = "#D97706"
+     outputBox.style.fontSize = "xx-large"
     }
 
 

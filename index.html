@@ -5,22 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark14</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Mark14 Stocks</h1>
+    <nav class="nav">SamyakCodes</nav>
+    <h1>Check Profit/Loss on your Stock</h1>
     <main>
-        <label for="initial-price">Initial price</label>
-        <input id="initial-price" type="text" placeholder="Enter initial price">
-        <label for="stocks-quantity"> Quantity of stocks
-            <input id="stocks-quantity" class="text" placeholder="Enter the Number of stocks bought">
+        <div class="info">
+            The stock market refers to the collection of markets and exchanges where regular activities of buying, selling, and issuance of shares of publicly-held companies take place. Such financial activities are conducted through institutionalized formal exchanges or over-the-counter (OTC) marketplaces which operate under a defined set of regulations. There can be multiple stock trading venues in a country or a region which allow transactions in stocks and other forms of securities. 
+        </div>
+        <div>
+        <label class="label" for="initial-price">Initial price:</label>
+        <input class="input" id="initial-price" type="number" placeholder="Enter initial price">
+    </div>
+    <div>
+        <label class="label" for="stocks-quantity"> No. of stocks:
+            <input class="input" id="stocks-quantity" type="number" placeholder="Enter the Number of stocks bought">
         </label>
-        <label for="current-price">Current price
-            <input id="current-price" type="text" placeholder="Enter current price of stocks">
+    </div>
+    <div>
+        <label class="label" for="current-price">Current price:
+            <input class="input" id="current-price" type="number" placeholder="Enter current price of stocks">
         </label>
-        <button id="submit-btn">Tell me</button>
-        <div id="output-box"></div>
+    </div>
+    <div>
+        <button class="button" id="submit-btn">Check out</button>
+    </div>
+        <div class="output" id="output-box"></div>
 
         <script src="/app.js"></script>
+
+        <footer class="footer">
+            Connect with me on:
+            <div class="/">
+                <a class="footer-pills" href="https://github.com/samyakshah3008">Github</a>
+                <a class="footer-pills" href="https://twitter.com/SamyakShah_18">Twitter</a>
+                <a  class="footer-pills" href="https://www.instagram.com/codersam_18/">Instagram</a>
+             </div>
+             
+        </footer>
     </main>
 </body>
 </html>
