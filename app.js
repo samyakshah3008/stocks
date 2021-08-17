@@ -7,14 +7,15 @@ var outputBox = document.querySelector('#output-box')
 submitbtn.addEventListener('click',submitHandler)
 
 function submitHandler(){
-    var ip = initialPrice.value
-    var qty = stocksQuantity.value
-    var curr = currentPrice.value
+    var ip = Number(initialPrice.value)
+    var qty = Number(stocksQuantity.value)
+    var curr = Number(currentPrice.value)
 
     calculateProfitAndLoss(ip,qty,curr)
 }
 
 function calculateProfitAndLoss(initial,quantity,current){
+  console.log(typeof(initial))
     if (initial > current) {
       var loss = (initial - current) * quantity
       var lossPercentage = (loss/initial) * 100
