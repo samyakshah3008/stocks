@@ -24,7 +24,7 @@ function calculateProfitAndLoss(initial,quantity,current){
   console.log(typeof(initial))
     if (initial > current) {
       let lossPercentage=(((initial-current)/initial)*100).toFixed(2);
-     showOutput(`The loss is   ${(initial-current)*quantity}   and loss percentage is   ${lossPercentage} %`)
+     showOutput(`The loss is   ${(initial-current)*quantity} rupees  and loss percentage is   ${lossPercentage} %`)
       
       outputBox.style.color = "white"
       outputBox.style.fontSize = "xx-large"
@@ -32,7 +32,7 @@ function calculateProfitAndLoss(initial,quantity,current){
       document.body.classList.add("lossBg")
     }else if (current > initial){
       let profitPercentage=(((current-initial)/initial)*100).toFixed(2);
-     showOutput(`The profit is   ${(current-initial)*quantity}   and profit percentage is   ${profitPercentage} %`)
+     showOutput(`The profit is   ${(current-initial)*quantity} rupees  and profit percentage is   ${profitPercentage} %`)
      outputBox.style.color = "white"
      outputBox.style.fontSize = "xx-large"
      document.body.classList.add("profitBg")
