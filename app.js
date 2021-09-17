@@ -23,17 +23,16 @@ if (ip>=0 && qty> 0 && curr>= 0) {
 function calculateProfitAndLoss(initial,quantity,current){
   console.log(typeof(initial))
     if (initial > current) {
-      var loss = (initial - current) * quantity
-      var lossPercentage = (loss/initial) * 100
-      showOutput('Loss is ' + loss + ' and the loss percentage is ' + lossPercentage + '%')
+      let lossPercentage=(((initial-current)/initial)*100).toFixed(2);
+     showOutput(`The loss is   ${(initial-current)*quantity}   and loss percentage is   ${lossPercentage} %`)
+      
       outputBox.style.color = "white"
       outputBox.style.fontSize = "xx-large"
        document.body.classList.remove("profitBg")
       document.body.classList.add("lossBg")
     }else if (current > initial){
-        var profit = (current - initial) * quantity
-      var profitPercentage = (profit/initial) * 100
-     showOutput('The profit is ' + profit + ' and profit percentage is ' + profitPercentage + '%')
+      let profitPercentage=(((current-initial)/initial)*100).toFixed(2);
+     showOutput(`The profit is   ${(current-initial)*quantity}   and profit percentage is   ${profitPercentage} %`)
      outputBox.style.color = "white"
      outputBox.style.fontSize = "xx-large"
      document.body.classList.add("profitBg")
